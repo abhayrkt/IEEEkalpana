@@ -1,0 +1,56 @@
+\documentclass[12pt, a4paper, twoside]{article}
+
+\usepackage{geometry}
+\geometry{margin = 0.7in}
+
+\usepackage{array}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+
+\begin{document}
+	\Huge \begin{center} Title of the Project \end{center} %Chenge it to your project title
+	
+	\Large \begin{center} \textsf{Synopsis} \end{center}
+	
+	\begin{table}[h]
+		\centering
+		\begin{tabular}{ P{0.5\textwidth} P{0.45\textwidth} }
+			%Replace the default values with your names
+			Name of Participant 1 & Name of Participant 2\\
+			\small \textit{Dept. of Institution (1)} & \small \textit{Dept. of Institution (2)}\\
+			\small \textit{Name of the Institution (1)} & \small \textit{Name of the Institution (2)}\\
+			\small \textit{City, Country - zip (1)} & \small \textit{City, Country - zip (2)}\\
+			\small email : someone@example.com & \small email : someone@example.com\\
+			 & \\
+			 %Delete all lines below this if you have only 2 members
+			\multicolumn{2}{P{\textwidth}}{Name of participant 3} \\
+			\multicolumn{2}{P{\textwidth}}{\small \emph{Dept. of Institution (3)}} \\
+			\multicolumn{2}{P{\textwidth}}{\small \textit{Name of the Institution (3)}} \\
+			\multicolumn{2}{P{\textwidth}}{\small \textit{City, Country - zip (3)}} \\
+			\multicolumn{2}{P{\textwidth}}{\small email : someone@example.com}
+			%Delete upto this if you have only 2 members
+		\end{tabular}
+	\end{table}
+	\normalsize
+	\begin{flushleft}
+	\textit{\textbf{Correspondence email} : someone@example.com}\\
+	\textbf{Domain of working} : Provide your domain(s) of working. Domain must be one from the list given in the website.\\
+	\textbf{Specifics} : Which specific issue(s) are you willing to solve using this project. Separate by commas.
+	\end{flushleft}
+
+	
+	\paragraph{Abstract} The abstract must explain the idea in brief. You must write about 180-240 words related to the project you are willing to work on. Prepare the abstract after carefully researching the idea, and analyzing the possibilities of it in real world. A good abstract also briefly hints the impact factor of the project, or the amount of change your idea can bring, if implemented in real world. This section needs to be small and reflect the wide idea in the least possible number of words. Going beyond the specified number of words will result in deduction of marks for the synopsis during review. You can describe your idea in detail in the later stages. You can edit this file on your system, using a \LaTeX editor for your convenience. Please take care of the spellings and grammar. It is recommended that you include emphasized words in the keywords below. Please do not use special characters, or math/equations in the title section or abstract. If you are a team of two, delete the participant 3 details, as directed above. At the end, compile and export it as a PDF document, rename it with your team name and mail it to the organizers.
+	\paragraph{Keywords} separate, keywords, using, commas.
+	\paragraph{Technologies Used}
+	\begin{enumerate}
+		%Please provide all technologies that you wish to use in the project.
+		%Technologies must be listed using simple bullet points, for example
+		\item Internet of Things
+		\item Big data
+		\item Digital Communication
+		%You need not list all of it, but the most significant of the techs used.
+	\end{enumerate}
+	\paragraph{Mentor: }%Remove if there is no mentor
+	Name of your mentor (with designation and title like Dr., Prof, etc),\\
+	Dept. of Institution, Name of the institution, City, Country – zip.\\
+	Email ID : someone@example.com
+\end{document}
