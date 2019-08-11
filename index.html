@@ -295,9 +295,24 @@
 			<article id="quiz">
 				<h2 class="major">Daily Quiz</h2>
 				<h4 class="due">Submissions close @ 6pm</h4>
-				<ol>
-					<li>Which came first, the chicken or the egg?</li>
-				</ol>
+				<!-- <center><h2>Try again tomorrow</h2></center> -->
+				<div id="quiz-typeform"
+					 style="width: 100%; height: 450px;">
+				</div>
+				<script src="https://embed.typeform.com/embed.js" type="text/javascript"></script>
+				<script type="text/javascript">
+				  window.addEventListener("DOMContentLoaded", function() {
+					var el = document.getElementById("quiz-typeform");
+					// When instantiating a widget embed, you must provide the DOM element
+					// that will contain your typeform, the URL of your typeform, and your
+					// desired embed settings
+					window.typeformEmbed.makeWidget(el, "https://kalpana2019.typeform.com/to/d4deWO", {
+					  hideFooter: true,
+					  hideHeaders: true,
+					  opacity: 0
+					});
+				  });
+				</script>
 			</article>
 
 			<article id="problems">

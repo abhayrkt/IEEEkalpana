@@ -189,6 +189,10 @@
 			margin: 0 0 2rem 0;
 		}
 
+		div.quiz-typeform {
+			opacity: 0;
+		}
+
 	h1 {
 		font-size: 2.25rem;
 		line-height: 1.3;
