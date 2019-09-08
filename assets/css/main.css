@@ -1335,6 +1335,10 @@
 					#challengenote {
 						font-weight: 600;
 					}
+
+					#kalpanaquote {
+						font-weight: 600;
+					}
 					
 		#header nav.use-middle:after {
 			content: '';
