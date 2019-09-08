@@ -1328,10 +1328,14 @@
 					.problem-coming {
 						text-align: center;
 						letter-spacing: 10px;
-						font-size: 25px;
+						font-size: 1.2rem;
 						margin-top: 12%;
 					}
 
+					#challengenote {
+						font-weight: 600;
+					}
+					
 		#header nav.use-middle:after {
 			content: '';
 			display: block;

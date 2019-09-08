@@ -44,7 +44,8 @@
 			width: 100%;
 			height: 100%;
 			/*background-color: #000000;*/
-			background-image: url("https://img4.goodfon.com/wallpaper/nbig/a/a2/galaxy-space-red-dark-black-hd.jpg");
+			/* background-image: url("https://img4.goodfon.com/wallpaper/nbig/a/a2/galaxy-space-red-dark-black-hd.jpg"); */
+			background-image: url("images/bg3.jpg");
 			background-size: 100%; 
 			opacity: 0.5;	
 			background-size: cover;
@@ -87,8 +88,9 @@
 			<div class="content">
 				<div class="inner">
 					<img src = "images/Kalpana.png">
-					<h2 style="font-family: 'Exo 2';"> September 28th, 2019</h2>
-					<h3 style="font-family: 'Open Sans Condensed';">An IEEE Pesit South Campus,WiE Chapter event</h3>
+					<h2 style="font-family: 'Exo 2';"> October 1st and 2nd, 2019</h2>
+					<!-- <h3 style="font-family: 'Open Sans Condensed';">24hr Make-A-Thon</h3> -->
+					<h3 style="font-family: 'Open Sans Condensed';">An IEEE PESU EC Campus, WiE Chapter event</h3>
 					
 
 				</div>
@@ -102,7 +104,29 @@
 					<!-- NO <li><a href="#register">Register</a></li> -->
 					<li><a href="#schedule">Schedule</a></li>
 					<!-- NO <li><a href="#visitor">Visitors</a></li> -->
-					<li><a href="#register">Register</a></li>
+					<li><a id="bt-popup" href="#">Register</a></li>
+
+					<script src="https://embed.typeform.com/embed.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    let popup1, popup2, popup3;
+    window.addEventListener('DOMContentLoaded', function () {        
+        // When instantiating a popup embed, you must provide the URL
+        // of your typeform and your desired embed settings. If you don't
+        // provide any settings, a default 'popup' embed is instantiated.
+        popup2 = window.typeformEmbed.makePopup('https://kalpana2019.typeform.com/to/N33iMZ', {
+          hideHeaders: true,
+          hideFooter: true
+        });
+      })
+    
+      // Now we bind our buttons to open our previously instantiated
+      // embedded typeforms when clicked
+    
+      document.getElementById('bt-popup').addEventListener('click', function () {
+        popup2.open();
+      });
+  </script>
+
 					<!-- NO <li><a href="#quiz">Daily Quiz</a></li>	 -->
 					<li><a href="#sponsor">Sponsors</a></li>					
 					<li><a href="#help">Contact</a></li>
@@ -137,19 +161,19 @@
 
 			<!-- steps    Ample amount of time will be given to the shortlisted teams to prepare their projects for the same.-->
 			<article id="steps">
-				<h2 class="major">Procedure for students:</h2>
-				<h2><b>Step 1:</b></h2>  Find a team. The maximum number of members per team is 4 with a strict criteria of having <b><i>at least 1 female member</i> </b>per team.</br>
+				<h2 class="major">Procedure:</h2>
+				<h2><b>Step 1:</b></h2>  Find a team. The team must consist of 2 - 4 members</br>
 				</br>
 				<h2><b>Step 2:</b></h2>Take a good look at our problem statements <a href="#problems" style="color:red;">here</a></br>
 				</br>
-				<h2><b>Step 3:</b></h2>Select a problem statement of your interest and find an innovative idea for it.<br><u>Ex:</u> For a problem statement "Traffic Congestion", the solution could be "a sensor-based smart IoT application".</br>
+				<h2><b>Step 3:</b></h2>Select a problem statement of your interest and find an innovative solution for it.</br><br><u>Ex:</u> For a problem statement "Traffic Congestion", the solution could be "a sensor-based smart IoT application".</br>
 				</br>
-				<h2><b>Step 4:</b></h2>Register <a href="#register" style="color:red;" > here</a> and send us your abstract at: </br> kalpana2019submissions@gmail.com</br><!--<br> <a href="#download" style="color:red;">Click here</a> for the format of the abstract and an example</br>--> </br>The last date for registering is the 10th of September</ul>
-			</br> The registration fees are <ul><li>Non-IEEE Members - TBD</li><li>IEEE Members - TBD</li> 
+				<h2><b>Step 4:</b></h2>Register and submit your ideas <a href="#register" style="color:red;" > here</a></br><!--<br> <a href="#download" style="color:red;">Click here</a> for the format of the abstract and an example</br>--> </br>Registration will close on <b>18th September</b> at <b>12:00 AM</b></ul>
+			</br> The registration fees are <ul><li>Non-IEEE Members - ₹450 per head</li><li>IEEE Members - ₹400 per head</li></ul> 
 				<!-- <li> ₹200 per head, for Non-IEEE members </li><li> ₹160 per head, for IEEE members</li> -->
 				</br>
 				</br>
-				<h2><b>Step 5:</b></h2> The shortlisted teams will be announced. These teams can compete in the Make-a-thon at the venue.
+				<h2><b>Step 5:</b></h2> The shortlisted teams will be announced. These teams can compete in the Make-A-Thon at the venue.
 				</br>
 				</br>
 				<h2><b>All the best!</b></h2></br>
@@ -175,29 +199,43 @@
 					<li>The solution to the problem cannot be a pre-existing one. The team must think of a method to develop on the current solutions and bring forward a better one, or think of a completely new solution. Any kind of plagiarism content more than 30% leads to a negative score.</li>	
 					<li>The solution to a problem cannot be a social experiment. It must be a technical solution with a proper scientific approach.</li>
 					<li>The solution must be feasible, i.e., it should have the potential to be easily implemented in, and accepted by society.</li>
-					<li>The solution should be focused at implementation in “Underdeveloped” and “Developing” nations.</li>
 					<li>The team must keep in mind the cost of implementing the idea with the conditions mentioned above, and must keep an estimate ready.</li>
-					<li>Synopsis must be submitted in the format described <a href="#download" style="color:red;">here.</a></li>
 					<li>Any type of malpractices or harassment will not be entertained and will lead to direct disqualification of the team.</li>
 				</ol>
 				<h3 class="major">Team Specifications</h2>
 					<p>To be eligible to participate in Kalpana 2019, a team must satisfy the following:-</p>
 					<ol>
 					  <li>A team is to be composed of 2 to 4 members.</li>
-					  <li>At least one member of the team must be a woman. Failing to have any female member on the event day shall not be accepted and the team will be disqualified, disregarding the rank on the synopsis review.</li>
-					  <li>All members of a team should be students in any Undergraduate program in science or engineering in Karnataka (IEEE Bangalore Section geographical region).</li>
-					  <li>The team can have members from more than one institution in a city.</li>
+					  <li>All members of a team should be students in any Undergraduate program in science or engineering in India.</li>
+					  <li>The team can have members from more than one institution.</li>
 					  <li>The solution must satisfy the general requirements discussed above.</li>
-					  <!-- <li>The solution must be unique to a team. Reviewers shall check any possibilities of plagiarism for all entries.</li> -->
 					  <li>The team can have a mentor, who is a faculty from their institution. Presence of a mentor shall not affect the eligibility of a team and will not influence the evaluation of a synopsis in any way.</li>
 					</ol>
+					<p id="challengenote"><u>NOTE</u>:  <em id="challengenote">Depending on the solution provided by the team, they will be given a part to improvise in their product as a challenge. This will be provided on the day of the event</em>
 			</article>
 
 
 		<!-- About -->
 			<article id="register">
 				<h2 class="major">Register</h2>
-				<center><h3 class="problem-coming">Registrations will open shortly</h3></center>
+				<!-- <center><h3 class="problem-coming">Registrations will open shortly</h3></center> -->
+				<div id="quiz-typeform"
+					 style="width: 100%; height: 450px;">
+				</div>
+				<script src="https://embed.typeform.com/embed.js" type="text/javascript"></script>
+				<script type="text/javascript">
+				  window.addEventListener("DOMContentLoaded", function() {
+					var el = document.getElementById("quiz-typeform");
+					// When instantiating a widget embed, you must provide the DOM element
+					// that will contain your typeform, the URL of your typeform, and your
+					// desired embed settings
+					window.typeformEmbed.makeWidget(el, "https://kalpana2019.typeform.com/to/d4deWO", {
+					  hideFooter: true,
+					  hideHeaders: true,
+					  opacity: 0
+					});
+				  });
+				</script>
 				<!-- <center><a class="typeform-share button" href="https://www.townscript.com/e/kalpana-2019-hackathon-434224" data-mode="popup" style="display:inline-block;text-decoration:none;background-color:#267DDD;color:white;cursor:pointer;font-family:'Open Sans';font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" target="_blank">Register Here!</a></center> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> -->
 				<!-- <h2> Registerations are over!</h2> -->
 			</article>
@@ -262,7 +300,7 @@
 
 			<article id="visitor">
 				<h2 class="major">Register</h2>
-				<center><a class="typeform-share button" href="https://www.townscript.com/e/kalpana-2018-exhibition-322302" data-mode="popup" style="display:inline-block;text-decoration:none;background-color:#267DDD;color:white;cursor:pointer;font-family:'Open Sans';font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" target="_blank">Get your pass Here!</a></center> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+				<!-- <center><a class="typeform-share button" href="https://www.townscript.com/e/kalpana-2018-exhibition-322302" data-mode="popup" style="display:inline-block;text-decoration:none;background-color:#267DDD;color:white;cursor:pointer;font-family:'Open Sans';font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" target="_blank">Get your pass Here!</a></center> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> -->
 				<!--h2> Registerations are over!</h2-->
 			</article>
 
@@ -324,59 +362,108 @@
 
 			<article id="problems">
 				<h2 class="major">Problem Statements</h2>
-				<h3 class="problem-coming">Stay Tuned for Updates</h3>
-				<!-- <ol>
-					<li>		Enhancing Cyber Security using Blockchain</li>
-					<li>		Solution to combat Global Warming / Climate Change</li>
-					<li>		Medical Solution that would increase average life expectancy of humans / animals </li>
-					<li>		Better techniques/machines for Agriculture </li>
-					<li>		Smarter ways of living (Ex:Smart Home model)</li>
-					<li>		Traffic Management in Urban Areas</li>
-					<li>		Women’s Safety</li>
-					<li>		Child Safety</li>
-					<li>		Child Labour Elimination</li>
-					<li>		Sanitation </li>
-					<li>		Improved Education System</li>
-					<li>		Improved Transport System in Urban Area</li>
-					<li>		Fossil Fuel Reduction </li>
-					<li>		Food (Ex: System to make sure the minimal nutrition is received by infants)</li>
-					<li>		Rural Area Improvement</li>
-					<li>		Revival of Rivers</li>
-					<li>		Improved Health Care Systems</li>
-					<li>		Revenue Strengthening System(Ex: Tourist Recommendation System)</li>
-					<li>		Smart Cities</li>
-					<li>		Fake News Differentiation</li>
-					<li>		Drug Addiction </li>
-					<li>		Delivery of Fresh drinking water.</li>
-					<li>		Cleaner Energy. </li>
-					<li>		Soil Erosion</li>
-					<li>		Faster Justice System in India (Ex: Build an intelligent model that can ensure improved Justice System)</li>
-					<li>		Accident Prevention</li>
-					<li>		Improved Connectivity </li>
-					<li>		Combat Power Shortage</li>
-					<li>		Improved Governance</li>
-					<li>		Space Technology </li>
-					<li>		Emergency Systems</li>
-					<li>		Reduction of Crime and Theft</li>
-					<li>		Employment </li>
-					<li>		Documentation (Ex:System that ensures easy documentation for the government.)</li>
-					<li>		Combating Poverty</li>
-					<li>		Safe Payment Mechanism</li>
-					<li>		National Security</li>
-					<li>		Improvement of Small Scale Industries</li>
-					<li>		Biomedical Devices and Aid for differently abled</li>
-					<li>		Endangerment of Animals (Ex:System to report the activity of endangered animals in specified area )</li>
-					<li>		Infrastructure</li>
-					<li>		Cyber Security</li>
-					<li>		Cyber Bullying</li>
-					<li>		Natural Disaster Survival</li>
-					<li>		Mental Health (Ex: System that can detect mental health issues based on behaviour/sleep pattern, etc)</li>
-					<li>		Violence and Abuse</li>
-					<li>		Improve the lives of Tribals in India </li>
-					<li>		Deforestation</li>
-					<li>		Data Security</li>
-					<li>		Preventing proliferation of weapons in the society (Ex: System that ensures limited number of guns in a locality)</li>
-				</ol> -->
+				<!-- <h3 class="problem-coming">Stay Tuned for Updates</h3> -->
+				<ol>
+					<li>		Medicines and health products are important for addressing health problems and
+						improve quality of lives. They form an indispensable component of health systems in the
+						prevention, diagnosis and treatment of disease and in alleviating disability and functional
+						deficiency. Medicines can be easily faked and thus poses fatal effects on the life of the
+						patient taking them. Build an application to help the customer verify if some medicine is
+						authentic or not.</li>
+					</br>
+					<li>		A study reported in WHO, conducted for the NCMH (National Care Of Medical Health),
+						states that at least 6.5 per cent of the Indian population suffers from some form of
+						serious mental disorder, with no discernible rural-urban differences. Though there are
+						effective measures and treatments, there is an extreme shortage of mental health
+						workers like psychologists, psychiatrists, and doctors. Build an application to help fight
+						depression.</li>
+					</br>
+					<li>		Foreign Exchange (forex or FX) is the trading of one currency for another. For example,
+						one can swap the U.S. dollar for the INR. Come up with a system to make foreign
+						exchange cheap, quick and secure</li>
+					</br>
+					<li>		Although India is still catching up with the developments in artificial intelligence and
+						robotics as compared to others, Indian startups, as well as the government, are working
+						at a rapid pace to integrate new age technologies. According to an IFR research, robot
+						sales in India increased by 27 percent to a new peak of 2,627 units in India — almost the
+						same as in Thailand. Keeping this scenario in mind, build a prototype of a multipurpose
+						dynamic robot.</li>
+					</br>
+					<li>		Agriculture is one of the most important pillars of the Indian economy. The contribution of
+						agriculture and its allied sectors to India’s GDP stood at 13.9% during 2013-14
+						(Agriculture 2013). More than half of the Indian population is dependent on agriculture
+						for its subsistence. Build a prototype of a self moving device for agricultural monitoring.</li>
+					</br>
+					<li>		Search Mapping - Digital footprints create a pattern of the offender and serve as a
+						valuable resource to locate and save the victim. Search mapping generates patterns of
+						all digital footprints a person has left. Create an application that utilizes available digital
+						footprint to suggest the location of a missing person.</li>
+					</br>
+					<li>		Litter is any kind of trash thrown in small amounts, especially in places where it doesn’t
+						belong. With time, it heaps up. The practice is unlawful because it costs municipalities
+						millions of dollars annually in cleanup costs. It also portrays a bad picture of an area.
+						Come up with a solution of the problem of littering in public places.</li>
+					</br>
+					<li>		Build a prototype to enhance cyber security using Blockchain.</li>
+					</br>
+					<li>		Build an energy efficient system towards sustainable development.</li>
+				</br>
+					<li>		With the evolution of technology, everything is going digital. Even the charity funds
+						collection is done online. This results in a lot of fraudulent activities as well. A major
+						problem arises when we need to identify the online charity muggers and different them
+						from the real charities? Devise a solution to overcome this problem of charity mugging.</li>
+					</br>
+					<li>		Build a prototype to make medical imaging diagnosis simple and effective.</li>
+				</br>
+					<li>		Device a solution to improve the sudden health care kits in public places.</li>
+			</br>
+					<li>		A stock is a general term used to describe the ownership certificates of any company.
+						Come up with a system to accurately predict stocks to invest in the most optimal way.</li>
+					</br>
+					<li>		Digital learning is slowly taking over the orthodox way of teaching in schools and
+						colleges. Students now prefer notes over textbooks. Build an automated system that can
+						prepare notes after a meeting or class.</li>
+					</br>
+					<li>		One of the crucial issues for emergency medical service (EMS) in metropolis city is
+						traffic congestion. Especially, the ambulance services are highly affected. Their
+						response time increases leading to the causes of death and disabilities of patients in
+						crisis, which impose severe socio-economic costs across the world. Devise a solution
+						using technology to manage traffic for the ambulance to reach faster.</li>
+					</br>
+					<li>		According to theNational Council of Aging, about 92 percent of seniors have at least one
+						chronic disease and 77 percent have at least two. Heart disease, stroke, cancer, and
+						diabetes are among the most common and costly chronic health conditions causing
+						two-thirds of deaths each year. Come up with a solution of using smart tech to help solve
+						the aging community problems like muscular dystrophy.</li>
+					</br>
+					<li>		Food poisoning, also called foodborne illness, is caused by eating contaminated food.
+						Infectious organisms — including bacteria, viruses and parasites — or their toxins are
+						the most common causes of food poisoning. Come up with a smart application that can
+						help inform if an unknown food is safe to eat or not.</li>
+					</br>
+					<li>		Digital Twin - Build a 3D replica production layout or a Retail Space in AR or MR with
+						streaming data from IoT device or any digital content.</li></br>
+					<li>		Immersive Marketing on WebAR- Build a prototype on the use of AR/VR in marketing/
+						brand building on WebAR.</li></br>
+					<li>		XR in Healthcare and Life Science - Build a prototype on the use of AR/VR in healthcare
+						to help medical professional/ patient or pharmaceutical companies with the
+						treatment of diseases and research</li></br>
+					<li>		Air pollution in India is a serious issue, ranking higher than smoking, high blood
+						pressure, child and maternal malnutrition, and risk factors for diabetes. At least 140
+						million people breathe air 10 times or more over the WHO safe limit and 13 of the world's
+						20 cities with the highest annual levels of air pollution are in India. Air pollution
+						contributes to the premature deaths of 2 million Indians every year. Build a portable
+						electronic filter that can help avoid air pollution.</li></br>
+					<li>		Customer feedback is information provided by clients about whether they are satisfied
+						or dissatisfied with a product or service and about general experience they had with a
+						company. Come up with a solution to assure the customer that their feedback on any
+						website is not being tampered with.</li></br>
+					<li>		Using technology, devise a solution to remove the hassle of waiting in long queues at toll
+						gates.</li></br>
+					<li>		Build a prototype for footstep power generation on footpaths and same as it with the
+						vehicles when travelling on highways.</li></br>
+					<li>		Build an application for spam call detection.</li></br>
+				</ol>
 				</br>
 				<!-- </br> -->
 				<!-- </br> -->
@@ -634,6 +721,7 @@
 			</br>
 			<img src = "images/ieeelogo.png" class = "image foot copyright" style="width:100% max-width:100% display:inline-block">
 			<img src ="images/sb.png" class = "image foot copyright" style="width:100% max-width:100% display:inline-block"  alt="" >
+			<img src ="images/pes_logo_white.png" class = "image foot copyright" style="width:100% max-width:100% display:inline-block"  alt="" >
 			<img src ="images/wielo.png" class = " copyright image foot" alt="" style="width:100% max-width:100% display:inline-block"  >
 			</br>
 			</br>
