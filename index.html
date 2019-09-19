@@ -91,6 +91,26 @@
 					<h2 style="font-family: 'Exo 2';"> October 1st and 2nd, 2019</h2>
 					<!-- <h3 style="font-family: 'Open Sans Condensed';">24hr Make-A-Thon</h3> -->
 					<h3 style="font-family: 'Open Sans Condensed';">An IEEE PESU EC Campus, WiE Chapter event</h3>
+					<h3 style="font-family: 'Open Sans Condensed';" id="timertext">Registrations close in </h3>
+					<h2 style="font-family: 'Exo 2';" id="timer"></h2>
+					<script>
+						var deadline = new Date("Sep 22, 2019 23:59:59").getTime(); 
+						var x = setInterval(function() { 
+						var now = new Date().getTime(); 
+						var t = deadline - now; 
+						var days = Math.floor(t / (1000 * 60 * 60 * 24)); 
+						var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60)); 
+						var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60)); 
+						var seconds = Math.floor((t % (1000 * 60)) / 1000); 
+						document.getElementById("timer").innerHTML = days + "d "  
+						+ hours + "h " + minutes + "m " + seconds + "s "; 
+							if (t < 0) { 
+								clearInterval(x); 
+								document.getElementById("timertext").style.visibility = "hidden";
+								document.getElementById("timer").innerHTML = "Registrations Closed"; 
+							} 
+						}, 1000);
+					</script>
 					
 
 				</div>
