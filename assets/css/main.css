@@ -1335,6 +1335,10 @@
 					.boldletters {
 						font-weight: 600;
 					}
+
+					#registertext {
+						text-align: center;
+					}
 					
 		#header nav.use-middle:after {
 			content: '';

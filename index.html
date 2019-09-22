@@ -93,7 +93,7 @@
 					<h3 style="font-family: 'Open Sans Condensed';">An IEEE PESU EC Campus, WiE Chapter event</h3>
 					<h3 style="font-family: 'Open Sans Condensed';" id="timertext">Registrations close in </h3>
 					<h2 style="font-family: 'Exo 2';" id="timer"></h2>
-					<script>
+					<!-- <script>
 						var deadline = new Date("Sep 22, 2019 23:59:59").getTime(); 
 						var x = setInterval(function() { 
 						var now = new Date().getTime(); 
@@ -110,7 +110,7 @@
 								document.getElementById("timer").innerHTML = "Registrations Closed"; 
 							} 
 						}, 1000);
-					</script>
+					</script> -->
 					
 
 				</div>
@@ -257,9 +257,30 @@
 					});
 				  });
 				</script> -->
-				<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScg5K4x27iDZlAU35JrYE3NJjsnvkwO4ZBd58IL0GXMECmSAg/viewform?embedded=true" width="100%" height="500px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+				<iframe id="googleform" src="https://docs.google.com/forms/d/e/1FAIpQLScg5K4x27iDZlAU35JrYE3NJjsnvkwO4ZBd58IL0GXMECmSAg/viewform?embedded=true" width="100%" height="500px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 				<!-- <center><a class="typeform-share button" href="https://www.townscript.com/e/kalpana-2019-hackathon-434224" data-mode="popup" style="display:inline-block;text-decoration:none;background-color:#267DDD;color:white;cursor:pointer;font-family:'Open Sans';font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" target="_blank">Register Here!</a></center> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> -->
-				<!-- <h2> Registerations are over!</h2> -->
+				<h3 id="registertext" style="display: none"> Registerations are over!</h3>
+
+				<script>
+					var deadline = new Date("Sep 22, 2019 09:24:00").getTime(); 
+					var x = setInterval(function() { 
+					var now = new Date().getTime(); 
+					var t = deadline - now; 
+					var days = Math.floor(t / (1000 * 60 * 60 * 24)); 
+					var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60)); 
+					var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60)); 
+					var seconds = Math.floor((t % (1000 * 60)) / 1000); 
+					document.getElementById("timer").innerHTML = days + "d "  
+					+ hours + "h " + minutes + "m " + seconds + "s "; 
+						if (t < 0) { 
+							clearInterval(x); 
+							document.getElementById("timertext").style.visibility = "hidden";
+								document.getElementById("timer").innerHTML = "Registrations Closed";
+							document.getElementById("googleform").style.display = "none";
+							document.getElementById("registertext").style.display = "block"; 
+						} 
+					}, 1000);
+				</script>
 			</article>
 
 			<article id="schedule">
