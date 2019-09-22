@@ -123,7 +123,7 @@
 					<li><a href="#problems">Statements</a></li>
 					<li><a href="#register">Register</a></li>
 					<li><a href="#schedule">Schedule</a></li>
-					<li><a href="#workshop">Workshop</a></li>
+					<!-- <li><a href="#workshop">Workshop</a></li> -->
 					<!-- NO <li><a href="#visitor">Visitors</a></li> -->
 					<!-- <li><a id="bt-popup" href="#">Register</a></li> -->
 
@@ -190,7 +190,7 @@
 				</br>
 				<h2><b>Step 3:</b></h2>Select a problem statement of your interest and find an innovative solution for it.</br><br><u>Ex:</u> For a problem statement "Traffic Congestion", the solution could be "a sensor-based smart IoT application".</br>
 				</br>
-				<h2><b>Step 4:</b></h2>Register and submit your ideas <a href="#register" style="color:red;" > here</a></br><!--<br> <a href="#download" style="color:red;">Click here</a> for the format of the abstract and an example</br>--> </br>Registration will close on <b>22nd September</b> at <b>11:59 PM</b></ul>
+				<h2><b>Step 4:</b></h2>Register and submit your ideas <a href="#register" style="color:red;" > here</a></br><!--<br> <a href="#download" style="color:red;">Click here</a> for the format of the abstract and an example</br>--> </br>Registration will close on <b>23rd September</b> at <b>01:00 AM</b></ul>
 			</br> The registration fees are <ul><li>Non-IEEE Members - ₹450 per head</li><li>IEEE Members - ₹400 per head</li></ul> 
 			<p class="boldletters">Note: Participants will have to pay the fee only if their idea is shortlisted</p>
 				<!-- <li> ₹200 per head, for Non-IEEE members </li><li> ₹160 per head, for IEEE members</li> -->
@@ -248,6 +248,7 @@
 		<!-- About -->
 			<article id="register">
 				<h2 class="major">Register</h2>
+				<h4 id="note">Note: The form will automatically disappear @ 1am</h4>
 				<!-- <center><h3 class="problem-coming">Registrations will open shortly</h3></center> -->
 				<!-- <div id="quiz-typeform"
 					 style="width: 100%; height: 450px;">
@@ -271,7 +272,7 @@
 				<h3 id="registertext" style="display: none"> Registerations are over!</h3>
 
 				<script>
-					var deadline = new Date("Sep 22, 2019 23:59:59").getTime(); 
+					var deadline = new Date("Sep 23, 2019 01:00:00").getTime(); 
 					var x = setInterval(function() { 
 					var now = new Date().getTime(); 
 					var t = deadline - now; 
@@ -286,6 +287,7 @@
 							document.getElementById("timertext").style.visibility = "hidden";
 								document.getElementById("timer").innerHTML = "Registrations Closed";
 							document.getElementById("googleform").style.display = "none";
+							document.getElementById("note").style.display = "none";
 							document.getElementById("registertext").style.display = "block"; 
 						} 
 					}, 1000);
