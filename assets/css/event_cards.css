@@ -1,0 +1,18 @@
+#event_cards .card{
+	border-radius:20px;
+	padding: 30px 20px 20px 20px;
+	box-shadow: 5px 5px 5px 5px #888888;
+	background:transparent;
+	color:white;
+}
+
+#event_cards .card:hover {
+	background-color:#434342;
+	box-shadow:0px transparent;
+	transition-duration:0.5s;
+}
+
+
+section{
+	padding:30px;
+}
